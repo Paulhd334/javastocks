@@ -10,12 +10,12 @@ Application de gestion de stocks pour l'association **Web Courses** qui organise
 Permet de gérer les articles (boissons, textiles, denrées), les coureurs, les réservations et les réapprovisionnements.
 
 ### Fonctionnalités principales
-- ✅ Gestion complète des articles (CRUD)
-- ✅ Gestion des coureurs et types d'épreuve
-- ✅ Réservations avec vérification des stocks
-- ✅ Détection des ruptures et mises en attente
-- ✅ Demandes de réapprovisionnement
-- ✅ Historique et statistiques
+-  Gestion complète des articles (CRUD)
+-  Gestion des coureurs et types d'épreuve
+-  Réservations avec vérification des stocks
+-  Détection des ruptures et mises en attente
+-  Demandes de réapprovisionnement
+-  Historique et statistiques
 
 ---
 
@@ -27,11 +27,9 @@ Permet de gérer les articles (boissons, textiles, denrées), les coureurs, les 
 | Base de données | PostgreSQL 17 |
 | Interface graphique | Swing |
 | Build tool | Maven |
-| JDBC | PostgreSQL JDBC Driver 42.6.0 |
-
 ---
 
-## 📦 Installation
+##  Installation
 
 ### Prérequis
 - Java JDK 11 ou supérieur

@@ -25,3 +25,10 @@ net start postgresql-x64-18
 
 
 & "C:\Program Files\PostgreSQL\18\bin\psql.exe" -U postgres -p 5433 -d javastocks
+
+
+
+
+git add .
+git commit -m "Mise à jour du projet"
+git push origin master:main
