@@ -1,0 +1,48 @@
+package com.javastocks.view;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class SplashScreen extends JWindow {
+    
+    public void showSplash(int duration) {
+        JPanel content = (JPanel) getContentPane();
+        content.setBackground(Color.WHITE);
+        
+        int width = 500;
+        int height = 300;
+        setSize(width, height);
+        setLocationRelativeTo(null);
+        
+        content.setLayout(new BorderLayout());
+        
+        JLabel title = new JLabel("JavaStocks", JLabel.CENTER);
+        title.setFont(new Font("Arial", Font.BOLD, 30));
+        title.setForeground(new Color(0, 102, 204));
+        content.add(title, BorderLayout.NORTH);
+        
+        JLabel message = new JLabel("Chargement de l'application...", JLabel.CENTER);
+        message.setFont(new Font("Arial", Font.PLAIN, 14));
+        content.add(message, BorderLayout.CENTER);
+        
+        JProgressBar progress = new JProgressBar();
+        progress.setIndeterminate(true);
+        content.add(progress, BorderLayout.SOUTH);
+        
+        JLabel dbInfo = new JLabel("PostgreSQL • localhost:5433/javastocks", JLabel.CENTER);
+        dbInfo.setFont(new Font("Arial", Font.PLAIN, 10));
+        dbInfo.setForeground(Color.GRAY);
+        content.add(dbInfo, BorderLayout.AFTER_LAST_LINE);
+        
+        setVisible(true);
+        
+        try {
+            Thread.sleep(duration);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        
+        setVisible(false);
+        dispose();
+    }
+}

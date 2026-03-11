@@ -1,0 +1,81 @@
+# Fichier .gitignore pour projet JavaStocks
+
+### Java ###
+*.class
+*.jar
+*.war
+*.ear
+*.log
+*.ctxt
+hs_err_pid*
+
+### Maven ###
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+### Eclipse ###
+.project
+.classpath
+.settings/
+bin/
+.metadata/
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+.idea_modules/
+
+### VS Code ###
+.vscode/
+*.code-workspace
+
+### OS ###
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+### Logs ###
+*.log
+log/
+logs/
+
+### Database ###
+*.db
+*.sqlite
+*.h2.db
+
+### Temp files ###
+*.tmp
+*.temp
+*~
+
+### Projet spécifique ###
+/run.bat
+/run.ps1
+/compiler_et_lancer.bat
+/libs/  # Si tu utilises Maven, tu n'as pas besoin de /libs
+### Maven Wrapper ###
+.mvn/
+mvnw
+mvnw.cmd
